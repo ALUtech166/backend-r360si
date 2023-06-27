@@ -14,7 +14,7 @@ exports.handler = async (event) => {
       case "POST":
         const { email, phone, message, name } =
           JSON.parse(event.body).contact;
-
+          
         const html = `
         <!DOCTYPE html>
         <html lang="en">
